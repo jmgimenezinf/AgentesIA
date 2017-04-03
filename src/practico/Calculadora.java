@@ -20,9 +20,9 @@ public class Calculadora extends Agent {
 		dfd.setName(getAID());
 		dfd.addServices(sd);
 		try {
-			DFService.register(this, dfd);
 			this.setBehavior(new CalculadoraBehaviour(this));
 			this.addBehaviour(this.getBehavior());
+			DFService.register(this, dfd);
 		} 	
 		catch (FIPAException e) {
 			myLogger.log(Logger.SEVERE, "Agent "+getLocalName()+" - Cannot register with DF", e);

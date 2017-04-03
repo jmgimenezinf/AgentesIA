@@ -10,10 +10,6 @@ public class Operaciones {
 	private static String expresionDivision = "(\\d+)(\\/(\\d+))+";
 	private static Pattern patronDigito = Pattern.compile("(\\d+)");
 	
-	
-	
-	public String mensajeString;
-
 	//Analizadores gramatica
 	public static boolean expresionValida(String expresion){
 		return (esSuma(expresion)||esResta(expresion)||esDivision(expresion)||esProducto(expresion));
@@ -39,7 +35,7 @@ public class Operaciones {
 		}else if(esResta(expresion)){
 				return "el resultado de la resta es " + restar(expresion);
 		}else if (esProducto(expresion)){
-				return "el resultado de la multiplicación es " + restar(expresion);
+				return "el resultado de la multiplicación es " + multiplicar(expresion);
 		}	else {
 				return "el resultado de la divison es " + dividir(expresion) ;
 			}
