@@ -1,4 +1,4 @@
-package practico;
+package entrega;
 
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
@@ -40,7 +40,7 @@ public class Operaciones {
 				String aux = expresion;
 				Matcher matcher = patronDigito.matcher(aux);
 				matcher.find();
-				int operando1= Integer.parseInt(matcher.group(1));
+				Integer.parseInt(matcher.group(1));
 				int operando2=	Integer.parseInt(matcher.group(1));
 				if (operando2 != 0){
 					return "el resultado de la divison es " + dividir(expresion) ;					

@@ -1,4 +1,5 @@
-package practico;
+package entrega;
+import entrega.Operaciones;
 import jade.core.Agent;
 import jade.core.behaviours.CyclicBehaviour;
 import jade.lang.acl.ACLMessage;
@@ -7,10 +8,14 @@ import jade.util.Logger;
 
 public class CalculadoraBehaviour extends CyclicBehaviour{
 	
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = 1L;
 	private Logger myLogger = Logger.getMyLogger(getClass().getName());
 	private ACLMessage mensaje;
 	private ACLMessage respuesta;
-	
+
 	public CalculadoraBehaviour(Agent a) {
 		super(a);
 		// TODO Auto-generated constructor stub

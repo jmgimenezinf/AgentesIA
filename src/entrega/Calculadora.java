@@ -1,4 +1,4 @@
-package practico;
+package entrega;
 import jade.core.Agent;
 import jade.domain.DFService;
 import jade.domain.FIPAException;
@@ -8,6 +8,10 @@ import jade.util.Logger;
 
 
 public class Calculadora extends Agent {
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = 1L;
 	private  CalculadoraBehaviour behaviour;
 	private Logger myLogger = Logger.getMyLogger(getClass().getName());
 	
@@ -16,7 +20,7 @@ public class Calculadora extends Agent {
 		ServiceDescription sd = new ServiceDescription();
 		sd.setType("Calculadora");
 		sd.setName(getName());
-		sd.setOwnership("TILAB");
+		sd.setOwnership("Los4M^2.P.S");
 		dfd.setName(getAID());
 		dfd.addServices(sd);
 		try {
